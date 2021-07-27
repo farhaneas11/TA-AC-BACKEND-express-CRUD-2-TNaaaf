@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                User-Diary
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section class="add-user">
+            <form action="/user/" method="POST">
+                <input type="text" placeholder="title" name="title" value="<%= users.title %>">
+            <input type="text" placeholder="author" name="author" value="<%= users.author %>">
+            <input type="text" placeholder="Tags" name="tags" value="<%= users.tags %>">
+            <input type="number" name="likes" id="likes" value="<%= users.likes %>">
+            <textarea name="description" id="description" cols="30" rows="10" value="<%= users.description %>" placeholder="description">
+                <%= users.description %>
+            </textarea>
+                <button type="submit">
+                    Add User
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
