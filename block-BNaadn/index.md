@@ -6,7 +6,7 @@ Q. Create an Online bookstore where you can display a list of books.
 
 - title
 - summary
-- pages
+- pages -
 - publication
 - cover_image
 
